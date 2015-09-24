@@ -7,7 +7,7 @@ TodoApp.controller('TodoListCtrl', function($scope, TasksTable) {
 	});
 	
 	$scope.addTodo = function () {
-		if (!$scope.formTodoTitle || $scope.formTodoDescription){
+		if (!$scope.formTodoTitle || !$scope.formTodoDescription){
 			alert("Please fill the task's title and description");
 			return;
 		}		
