@@ -1,0 +1,116 @@
+body {
+	background: #13756D;
+	font-family: megrim, fantasy;
+}
+
+#main {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.todo-wrapper {
+	background: #55B6AE;
+	width: 100%;
+	margin-bottom: 1em;
+}
+
+h1 {
+	margin: 0.5em 0;
+	text-align: center;
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 2em;
+	margin: 0;
+	color: #222;	
+}
+
+.task-list h2 {
+	text-align: center;
+}
+
+.task h2 {
+
+}
+
+ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+li {
+	font-size: 2em;
+	padding: 40px;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#65d8cb), to(#72f4e9));
+	background: -webkit-linear-gradient(#65d8cb 0%, #72f4e9 100%);
+	background: -moz-linear-gradient(#65d8cb 0%, #72f4e9 100%);
+	background: -o-linear-gradient(#65d8cb 0%, #72f4e9 100%);
+	background: linear-gradient(#65d8cb 0%, #72f4e9 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#65d8cb', endColorstr='#72f4e9',GradientType=0 );
+	list-style-type: none;
+	margin-left: 0px;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+h1 edit-in-place input,
+h2 edit-in-place input {
+	height: 30px;
+	float: left;
+	padding: 15px 0px;
+	text-indent: 10px;
+	width: 100%;
+}
+
+h1 edit-in-place input {
+	font-size: 0.7em;
+	margin-bottom: 0.5em;
+}
+
+h2 edit-in-place input {
+	font-size: 1em;
+}
+
+.add-input {
+	height: 25px;
+	float: left;
+	padding: 15px 0px;
+	font-size: 2em;
+	text-indent: 55px;
+	width: 75%;
+}
+
+.add-btn {
+	width: 24%;
+	background: #1CA89C none repeat scroll 0% 0%;
+	border: medium none;
+	padding: 40px;
+	cursor: pointer;
+	text-align: center;
+	font-size: 1.6em;
+}
+
+input,
+button {
+	font-family: megrim,fantasy;
+}
+
+.edit-in-place span {
+	cursor: pointer;
+}
+
+.edit-in-place input {
+	display: none;
+}
+
+.edit-in-place.active span {
+	display: none;
+}
+
+.edit-in-place.active input {
+	display: inline-block;
+}
