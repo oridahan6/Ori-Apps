@@ -1,0 +1,17 @@
+<div class="task-list" ng-controller="TodoListCtrl">
+	<h1>Tasks</h1>
+	<div class="todo-wrapper">
+		<ul class="todos">
+			<li ng-repeat="todo in todos">
+			<a href="#/task/{{todo.id}}">{{todo.title}}</a>
+			</li>
+		</ul>
+
+
+	</div>
+	<form>
+		<input id="titleInput" class="add-input" placeholder="Title" type="text" ng-model="formTodoTitle" ng-model-instant />
+		<input id="descInput" class="add-input" placeholder="Description" type="text" ng-model="formTodoDescription" ng-model-instant />
+		<button class="add-btn" ng-click="addTodo()"><span>Add</span></button>
+	</form>
+</div>
